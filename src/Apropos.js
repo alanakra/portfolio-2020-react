@@ -1,5 +1,8 @@
 import React from 'react';
 import './App.css';
+import {Link} from 'react-router-dom';
+import PDF from './assets/CV/CV-Alan-AKRA.pdf';
+import photo from './assets/image/PANA0409_522.jpg';
 
 function Apropos() {
  return (
@@ -24,11 +27,17 @@ function Apropos() {
     bien lors de stages de fin d'année. Toutes ces connaissances et expériences m'ont permis de confirmer mon envie de
     travailler dans le domaine du <strong>web</strong>.
       </p>
+      <a className="consulter" href={PDF}>Consulter mon CV PDF</a>
       </div>
       <div className="photo">
-      <img src="/assets/image/PANA0409_522.jpg" alt="Survolez la photo pour me décoouvrir" className="moi" id="moi"></img>
+      <img src={photo} alt="Survolez la photo pour me décoouvrir" className="moi" id="moi"></img>
       </div>
     </div>
+    <div className="project">
+     <Link to="/Projets">
+      Consulter mes projets
+     </Link>
+     </div>
   </div>
  );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {Link} from 'react-router-dom';
 
-function Navbar(props) {
+function Navbar() {
 
   const navStyle = {
     color: "white",
@@ -13,7 +13,7 @@ function Navbar(props) {
     <nav>
       <div className="nav-name">
         <Link style={navStyle} to="/">
-         <p>Alan AKRA</p>
+        Alan AKRA
         </Link>
       </div>
       <div className="nav-menu">

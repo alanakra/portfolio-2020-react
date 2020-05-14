@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-function Projets(props) {
+function Projets() {
  return (
   <div>
    <h1 className="titre-page">Projets</h1>
