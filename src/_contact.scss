@@ -1,0 +1,25 @@
+.container-contact {
+ display: flex;
+ justify-content: space-around;
+
+ .block {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     img {
+         height: 75px;
+         transition: all 0.8s ease;
+
+         &:hover {
+             transform: scale(1.05);
+         }
+     }
+ }
+}
+
+@media(max-width:720px) {
+ .container-contact {
+  flex-direction: column;
+  text-align: center;
+ }
+}

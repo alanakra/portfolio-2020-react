@@ -2,11 +2,14 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 function Home() {
-   const tabAccroche1 = ['étudiant 👨🏾‍💼','développeur 👨🏿‍💻','webmaster'];
-   const tabAccroche2 = ['créatif 🎨.','polyvalent.',"à l'écoute.",'collaboratif 🤝.','curieux 👀.'];
- 
-   const accrocheAleatoire1 = tabAccroche1[Math.floor(Math.random()*tabAccroche1.length)];
-   const accrocheAleatoire2 = tabAccroche2[Math.floor(Math.random()*tabAccroche2.length)];
+   
+   // setTimeout(() => {
+      const tabAccroche1 = ['étudiant 👨🏾‍💼','développeur 👨🏿‍💻','webmaster'];
+      const tabAccroche2 = ['créatif 🎨.','polyvalent.',"à l'écoute.",'collaboratif 🤝.','curieux 👀.'];
+    
+      const accrocheAleatoire1 = tabAccroche1[Math.floor(Math.random()*tabAccroche1.length)];
+      const accrocheAleatoire2 = tabAccroche2[Math.floor(Math.random()*tabAccroche2.length)];
+   // },5000)
  return (
   <div className="supertitre">
      <h1 className="titre-page-accueil">Alan Akra</h1>

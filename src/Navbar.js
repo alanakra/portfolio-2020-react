@@ -18,15 +18,16 @@ function Navbar() {
       </div>
       <div className="nav-menu">
         <ul>
-        <Link style={navStyle} to="/Apropos">
-         <li>À propos</li>
-        </Link>
-        <Link style={navStyle} to="/Projets">
-         <li>Projets</li>
-        </Link>
-        <Link style={navStyle} to="/Contact">
-         <li>Contact</li>
-        </Link>
+         <li>
+          <Link style={navStyle} to="/Apropos">À propos</Link>
+         </li>
+         <li>
+          <Link style={navStyle} to="/Projets">Projets</Link>
+         </li>
+         <li>
+          <Link style={navStyle} to="/Contact">Contact</Link>
+         </li>
+        
         </ul>
       </div>
     </nav>

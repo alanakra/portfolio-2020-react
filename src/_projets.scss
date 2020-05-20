@@ -1,0 +1,23 @@
+.definition {
+ font-family: 'Carlito', sans-serif;
+ font-size: 1.25rem;
+}
+
+.container-projets{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+ margin-bottom: 0.9375rem;
+}
+
+.projet{
+ margin-bottom: 0.9rem;
+ img{
+  max-width: 100%;
+  height: auto;
+  transition: all 0.8s ease;
+  &:hover{
+   transform: scale(1.05);
+  }
+ }
+}

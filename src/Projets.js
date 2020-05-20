@@ -1,5 +1,4 @@
 import React from 'react';
-// import './App.css';
 import './projets.module.scss';
 import {Link} from 'react-router-dom';
 import life from './assets/image-liste-projets/Victor_gun_opti_web_500_300.jpg';
@@ -12,26 +11,13 @@ import video_res from './assets/image-liste-projets/miniature_yt.jpg';
 import deez from './assets/image-liste-projets/deezweb_522.jpg';
 
 function Projets() {
-
-//  useEffect(() => {
-//    fetchItems();
-//  },[]);
-
-//  const [items, setItems] = useState([]);
-
-//  const fetchItems = () => {   
-//    }] ;
-//   console.log(data);
-//   setItems(items)
-//   };
-
  return (
   <div>
    <h1 className="titre-page">Projets</h1>
    <p className="definition">Portfolio (nom masculin) \pɔʁt.fo.ljo\ :<br></br>
    Dossier personnel dans lequel les acquis de formation et d'expérience d'une personne sont définis et démontrés.</p>
-   <section className="container">
-     <article>
+   <section className="container-projets">
+     <article className="projet">
       <Link>
         <img src={life} alt=""></img>
         <h2>Life</h2>
@@ -40,7 +26,7 @@ function Projets() {
       </Link>
       </article>
 
-      <article>
+      <article className="projet">
       <Link>
         <img src={portrait} alt=""></img>
         <h2>Mon portrait chinois</h2>
@@ -49,7 +35,7 @@ function Projets() {
       </Link>
       </article>
 
-      <article>
+      <article className="projet">
       <Link>
         <img src={spotify_image} alt=""></img>
         <h2>Redesign spotify</h2>
@@ -58,7 +44,7 @@ function Projets() {
       </Link>
       </article>
 
-      <article>
+      <article className="projet">
       <Link>
         <img src={cv_interactif} alt=""></img>
         <h2>CV interactif</h2>
@@ -67,7 +53,7 @@ function Projets() {
       </Link>
       </article>
 
-      <article>
+      <article className="projet">
       <Link>
         <img src={project_plus} alt=""></img>
         <h2>Project +</h2>
@@ -76,7 +62,7 @@ function Projets() {
       </Link>
       </article>
 
-      <article>
+      <article className="projet">
       <Link>
         <img src={festival_mmi} alt=""></img>
         <h2>Festival MMI</h2>
@@ -85,7 +71,7 @@ function Projets() {
       </Link>
       </article>
 
-      <article>
+      <article className="projet">
       <Link>
         <img src={video_res} alt=""></img>
         <h2>Video resume</h2>
@@ -94,7 +80,7 @@ function Projets() {
       </Link>
       </article>
 
-      <article>
+      <article className="projet">
       <Link>
         <img src={deez} alt=""></img>
         <h2>Deezweb</h2>

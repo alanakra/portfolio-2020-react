@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import email from './assets/image/email-24px.svg';
 import linkedin from './assets/image/linkedin.svg';
 import phone from './assets/image/cell-phone.svg';
@@ -52,10 +52,8 @@ function Contact() {
       </div>
 
       <div className="container-tel block">
-       <Link to="tel:+33751271377">
        <img src={phone} alt=""></img>
        <p>07 51 27 13 77</p>
-       </Link>
       </div>
 
       <div className="container-github block">

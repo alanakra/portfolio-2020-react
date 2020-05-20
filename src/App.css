@@ -1,4 +1,166 @@
 @charset "UTF-8";
+.container-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container-contact .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.container-contact .block img {
+  height: 75px;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+.container-contact .block img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+@media (max-width: 720px) {
+  .container-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+.supertitre {
+  text-align: center;
+  color: white;
+  margin-top: 25vh;
+}
+
+.titre-page-accueil {
+  font-size: 6rem;
+  letter-spacing: 0.13rem;
+  margin-top: 3rem;
+  margin-bottom: 1.625rem;
+}
+
+.accroche {
+  font-size: 1.875rem;
+}
+
+.accroche-first {
+  font-size: 2.5rem;
+}
+
+.know-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.partie-texte {
+  width: 50%;
+  font-family: 'Carlito';
+  letter-spacing: 0.01em;
+}
+
+.partie-texte .accroche {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.25rem;
+}
+
+.photo {
+  width: 50%;
+  text-align: center;
+}
+
+.moi {
+  max-width: 100%;
+  height: auto;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin-top: 30px;
+}
+
+.moi:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.project a::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.project a:hover::after {
+  content: '👀';
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+@media (min-width: 721px) {
+  .partie-texte {
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .partie-texte {
+    width: 100%;
+  }
+}
+
+.definition {
+  font-family: 'Carlito', sans-serif;
+  font-size: 1.25rem;
+}
+
+.container-projets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 0.9375rem;
+}
+
+.projet {
+  margin-bottom: 0.9rem;
+}
+
+.projet img {
+  max-width: 100%;
+  height: auto;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+.projet img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 @font-face {
   font-family: 'Code';
   src: url(/assets/font/CodeDemo-Bold.woff) format("woff");
@@ -60,62 +222,17 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border: solid 2px red;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
 }
 
 p {
   color: white;
 }
 
-.supertitre {
-  text-align: center;
-  color: white;
-  margin-top: 25vh;
-}
-
-.titre-page-accueil {
-  font-size: 6rem;
-  letter-spacing: 0.13rem;
-  margin-top: 3rem;
-  margin-bottom: 1.625rem;
-}
-
-.accroche {
-  font-size: 1.875rem;
-}
-
-.accroche-first {
-  font-size: 2.5rem;
-}
-
-.know-more {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.moi {
-  max-width: 100%;
-  height: auto;
-  -webkit-filter: blur(3px);
-          filter: blur(3px);
-  -webkit-transition: 1s;
-  transition: 1s;
-  margin-top: 30px;
-}
-
-.moi:hover {
-  -webkit-filter: none;
-          filter: none;
+a {
+  text-decoration: none;
 }
 
 .titre-page {
@@ -123,11 +240,6 @@ p {
   margin-top: 3rem;
   margin-bottom: 1.625rem;
   font-size: 2.5rem;
-}
-
-.definition {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.25rem;
 }
 
 .container {
@@ -140,17 +252,6 @@ p {
           flex-direction: row;
 }
 
-.container .partie-texte {
-  width: 50%;
-  font-family: 'Carlito';
-  letter-spacing: 0.01em;
-}
-
-.container .partie-texte .accroche {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.25rem;
-}
-
 .project {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,20 +262,6 @@ p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.25rem;
   margin-top: 1.625rem;
-}
-
-.project a::after {
-  content: '';
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-}
-
-.project a:hover::after {
-  content: '👀';
-  width: 30px;
-  height: 30px;
-  display: inline-block;
 }
 
 .consulter {
@@ -200,36 +287,6 @@ p {
 .discuss {
   font-family: 'Carlito';
   font-size: 1.25rem;
-}
-
-.container-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.container-contact .block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-.container-contact .block img {
-  height: 75px;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
-}
-
-.container-contact .block img:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
 }
 
 @media (max-width: 720px) {
@@ -259,16 +316,6 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .container .partie-texte {
-    width: 100%;
-  }
-  .container-contact {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
   }
 }
 /*# sourceMappingURL=App.css.map */
