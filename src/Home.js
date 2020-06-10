@@ -12,7 +12,7 @@ function Home() {
    // },5000)
  return (
   <div className="supertitre">
-     <h1 className="titre-page-accueil">Alan Akra</h1>
+     <h1 className="titre-page-accueil">Alan Akra ⚛</h1>
      <h2 className="accroche-first">Développeur front-end</h2>
      <h3 className="accroche">Bienvenue sur le portfolio d'un jeune <span id="accroche1">{accrocheAleatoire1}</span> <span id="accroche2">{accrocheAleatoire2}</span></h3>
      <div className="know-more">
