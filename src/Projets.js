@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import './projets.module.scss';
+import'./_projets.scss';
 import {Link} from 'react-router-dom';
 
 function Projets() {
@@ -10,7 +10,7 @@ function Projets() {
   const [items, setItems] = useState([]);
 
   const fetchItems = async () => {
-        const data = await fetch('https://api.alanakra.fr/portfolio-2020/projets.php');
+        const data = await fetch('https://api.alanakra.fr/portfolio-2020/projet.php');
         const items = await data.json();
         console.log(items);
         setItems(items)
@@ -25,7 +25,7 @@ function Projets() {
       <article>
         <Link to={`Projets/${item.id}`}>
         <img src={item.lien_image} alt=""></img>
-        <h2 key={item.id}>{item.titre}</h2>
+        <p key={item.id} className="title-project">{item.titre}</p>
         <p>{item.date}</p>
         <p>{item.categorie}</p>
         </Link>

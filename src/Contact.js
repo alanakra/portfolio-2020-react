@@ -1,10 +1,9 @@
 import React from 'react';
-import './App.scss';
 import email from './assets/image/email-24px.svg';
+import './_contact.scss';
 import linkedin from './assets/image/linkedin.svg';
 import phone from './assets/image/cell-phone.svg';
 import github from './assets/image/Octicons-mark-github.svg';
-import {Link} from 'react-router-dom';
 
 function Contact() {
 
@@ -38,17 +37,17 @@ function Contact() {
 
    <div className="container-contact">
       <div className="container-mail block">
-       <Link to="mailto:bonjour@alanakra.fr"> 
+       <a href="mailto:bonjour@alanakra.fr"> 
        <img src={email} alt=""></img>
        <p>alanakra@hotmail.fr</p>
-       </Link>
+       </a>
       </div>
 
       <div className="container-linkedin block">
-       <Link to="https://www.linkedin.com/in/alanakra/">
+       <a href="https://www.linkedin.com/in/alanakra/" target="_blank" rel="noopener noreferrer">
        <img src={linkedin} alt=""></img>
        <p>Alan AKRA</p>
-       </Link>
+       </a>
       </div>
 
       <div className="container-tel block">
@@ -57,10 +56,10 @@ function Contact() {
       </div>
 
       <div className="container-github block">
-       <Link to="https://github.com/alanakra">
+       <a href="https://github.com/alanakra" target="_blank" rel="noopener noreferrer">
        <img src={github} alt=""></img>
        <p>alanakra</p>
-       </Link>
+       </a>
       </div>
    </div>
  </div>

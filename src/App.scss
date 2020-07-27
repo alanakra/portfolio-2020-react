@@ -2,6 +2,7 @@
 @import 'home';
 @import 'apropos';
 @import 'projets';
+@import 'travaux';
 
 @font-face {
     font-family: 'Code';
@@ -10,14 +11,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-// @font-face{
-//     font-family: 'Carlito';
-//     src: url(/assets/font/Carlito-Regular-webfont.woff) format("woff");
-//     src: url(/assets/font/Carlito-Regular-webfont.woff2) format("woff2");
-//     font-weight: normal;
-//     font-style: normal;
-// }
 
 *,
 *::after,
@@ -131,6 +124,7 @@ a{
 
     .nav-menu {
         width: 100%;
+        font-size: 1rem;
     }
 
     .nav-menu>a {

@@ -1,3 +1,7 @@
+.container{
+ margin-bottom: 30px;
+}
+
 .partie-texte {
  width: 50%;
  font-family: 'Carlito';
@@ -6,6 +10,10 @@
  .accroche {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.25rem;
+ }
+
+ .pratique{
+  text-decoration: underline;
  }
 }
 
